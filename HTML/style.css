@@ -1,0 +1,15 @@
+h1{
+  color:rgb(255, 0, 0);
+  text-align: center;
+  text-decoration: underline;
+  text-transform: capitalize;
+  letter-spacing: 10px;
+  text-shadow: 3px 3px 5px black;
+}
+
+p{
+  color: blue;
+  text-indent: 100px;
+  line-height: 2.5;
+  word-spacing: 10px;
+}
