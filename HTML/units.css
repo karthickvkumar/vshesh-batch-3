@@ -22,11 +22,25 @@
   /* border-color: red; */
   border-top-color: red;
   border-bottom-color: blue;
-  border-radius: 30px;
+  border-radius: 56px;
+  padding: 20px;
+  margin: 60px;
 }
 
 .border-2{
   /* border-style: dashed;
   border-color: #3f51b5; */
   border: 3px dashed #3f51b5;
+  padding-top: 20px;
+  padding-left: 60px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.background{
+  /* background-color: darkseagreen; */
+  /* background-image: url("./shinchu.jpg"); */
+  background-image: url("https://stimg.cardekho.com/images/carexteriorimages/630x420/Hyundai/Creta/6775/1584360708758/front-left-side-47.jpg?tr=w-300");
+  background-size: 600px 400px;
+  /* background-repeat: no-repeat; */
 }
