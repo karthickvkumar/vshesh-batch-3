@@ -25,6 +25,8 @@
   border-radius: 56px;
   padding: 20px;
   margin: 60px;
+  font-size: 70px;
+  font-family: 'Neonderthaw', cursive;
 }
 
 .border-2{
@@ -35,12 +37,13 @@
   padding-left: 60px;
   margin-left: 50px;
   margin-right: 50px;
+  font-family: 'Comforter', cursive;
 }
 
 .background{
   /* background-color: darkseagreen; */
   /* background-image: url("./shinchu.jpg"); */
-  background-image: url("https://stimg.cardekho.com/images/carexteriorimages/630x420/Hyundai/Creta/6775/1584360708758/front-left-side-47.jpg?tr=w-300");
-  background-size: 600px 400px;
+  /* background-image: url("https://stimg.cardekho.com/images/carexteriorimages/630x420/Hyundai/Creta/6775/1584360708758/front-left-side-47.jpg?tr=w-300");
+  background-size: 600px 400px; */
   /* background-repeat: no-repeat; */
 }
