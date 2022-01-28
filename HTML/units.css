@@ -47,3 +47,33 @@
   background-size: 600px 400px; */
   /* background-repeat: no-repeat; */
 }
+
+.flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 400px;
+  border: 2px solid black;
+}
+
+.box{
+  width: 200px;
+  height: 300px;
+  border: 2px solid red;
+}
+
+.visible{
+  overflow: visible;
+}
+
+.hidden{
+  overflow: hidden;
+}
+
+.scroll{
+  overflow: scroll;
+}
+
+.auto{
+  overflow: auto;
+}
