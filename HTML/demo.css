@@ -40,9 +40,39 @@
 .title{
   height: 40%;
   border: 2px solid blue;
+  display: flex;
+  flex-direction: row;
 }
 
 .title-info{
   height: 56%;
+  border: 2px solid blue;
+}
+
+.thumbnail{
+  width: 10%;
+  height: 100%;
+  border: 2px solid red;
+}
+
+.heading{
+  width: 75%;
+  height: 100%;
+  border: 2px solid red;
+}
+
+.date{
+  width: 15%;
+  height: 100%;
+  border: 2px solid red;
+}
+
+.big-heading{
+  height: 46%;
+  border: 2px solid blue;
+}
+
+.small-heading{
+  height: 46%;
   border: 2px solid blue;
 }
