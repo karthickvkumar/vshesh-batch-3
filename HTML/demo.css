@@ -1,6 +1,6 @@
 .column-1 {
   height: 32vh;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px;
@@ -11,9 +11,10 @@
 
 .column-2 {
   height: 25vh;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   margin-left: 20px;
   margin-right: 20px;
+  font-size: 24px;
 }
 
 .column-3 {
@@ -23,56 +24,107 @@
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .main-image{
   width: 20%;
   height: 100%;
-  border: 2px solid black;
+  margin-right: 20px;
+  /* border: 2px solid black; */
 }
 
 .main-content{
   width: 80%;
   height: 100%;  
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 
 .title{
   height: 40%;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   display: flex;
   flex-direction: row;
 }
 
 .title-info{
   height: 56%;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
+  font-size: 24px;
 }
 
 .thumbnail{
   width: 10%;
   height: 100%;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 .heading{
   width: 75%;
   height: 100%;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 .date{
   width: 15%;
   height: 100%;
-  border: 2px solid red;
+  /* border: 2px solid red; */
+  font-size: 24px;
 }
 
 .big-heading{
   height: 46%;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
 }
 
 .small-heading{
   height: 46%;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
+}
+
+.block{
+  height: 100%;
+  width: 30%;
+  border: 2px solid black;
+}
+
+.block-image{
+  height: 65%;
+  border: 2px solid red;
+}
+
+.block-heading{
+  height: 15%;
+  border: 2px solid red;
+}
+
+.block-sub-heading{
+  height: 15%;
+  border: 2px solid red;
+}
+
+.image-property{
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  object-position: 100%;
+}
+
+.circle{
+  border-radius: 50px
+}
+
+.heading-text{
+  font-size: 32px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.sub-heading-text{
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #aeaeae;
 }
