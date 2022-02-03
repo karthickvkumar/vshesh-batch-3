@@ -60,3 +60,21 @@ studentDetails.location = "Mumbai";
 
 // To delete a existing Record -> delete object_variable_name.key
 delete studentDetails.location;
+
+// Array -> It is a collection of List data (List of Data)
+// Syntax of creating an Array
+
+// var variable_name = [ value_1, value_2, ... , Value_n ];
+// value -> Number, String, Boolean, Object, Array, Function
+
+var list_of_mark = [70, 85, 57, 78, 35];
+
+var name_list = ["asdfsadf", "reer", "dfbdf", "rtyrh"];
+
+var studentList = [
+  { name : "Karthick", age : 24},
+  {name : "Ak", age : 20},
+  { name : "Yuvi", age : 25}
+];
+
+// Operation in Array -> 4 Operation = Insert a new value, Read the Value, Edit the exiting value, Delete the value
