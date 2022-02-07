@@ -207,3 +207,31 @@ function check_person_category(){
     console.log("The person is Super Citizen");
   }
 }
+
+/* 
+Syntax - for (loop)
+for(initialization;  condition; increment/decrement){ 
+  //code block
+}
+*/
+
+for(var count = 1; count <= 10; count++){
+  console.log("Loop is running on count ", count)
+}
+
+/*
+Find even number for given N number of limit.
+Solution: 
+1. Get number (Nth number limit) value from user while running the code.
+2. Logic for finding even number -> Number % 2 => 0
+3. Repeat this logic till n number
+*/
+
+function check_even_numbers(){
+  var lastNumber = prompt("Enter the Last number");
+  for(var count = 1; count <= lastNumber; count++){
+    if(count % 2 == 0){
+      console.log(count, " is a Even Number");
+    }
+  }
+}
