@@ -147,3 +147,63 @@ function onLogin(){
 // ! - NOT
 // ! true -> false
 // ! false -> true
+
+//Syntax - if else conditon
+/*
+  if(conditon) {
+    // code block will execute if the condition is Truthy.
+  }
+  else{
+    // code block will execute if the condition is Falsy.
+  }
+*/
+
+/*
+Problem Statement
+1. We need to provide age(Number - Data type) as input for a program 
+2. If the given age is greater than or equal to 18 -> Output - The user is eligible for Vote
+3. If the given age is less then 18 -> Output - The user is not eligible for vote
+*/
+
+function check_voiting_status(){
+  var age = prompt("Enter your User Age");
+  if(age >= 18){
+    console.log("The user is eligible for Vote");
+  }
+  else{
+    console.log("The user is not eligible for vote");
+  }
+}
+
+//Syntax - Multipe if else conditon
+/*
+  if(conditon) {
+    // code block will execute if the condition is Truthy.
+  }
+  else if(condition){
+   // code block will execute if the condition is Truthy
+  }
+  else{
+    // code block will execute if the condition is Falsy.
+  }
+*/
+
+/*
+1. To give person age as input -> Number
+2. idenfity -> less then 18 -> The person is Minor
+2. idenfity -> greater then or equal to 18 and less than 60 -> The person is Major
+3. idenfity -> greater then or equal to 60 -> The person is Super Citizen
+*/
+
+function check_person_category(){
+  var age = prompt("Enter your User Age");
+  if(age < 18){
+    console.log("The person is Minor");
+  }
+  else if(age >= 18 && age < 60){
+    console.log("The person is Major");
+  }
+  else{
+    console.log("The person is Super Citizen");
+  }
+}
