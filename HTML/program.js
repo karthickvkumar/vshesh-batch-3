@@ -323,7 +323,7 @@ function find_weekday(){
 
 function diplayMessage(){
   var message = "Hello Everyone!";
-  future_value = "Hey Hi!";
+  future_value = "Hey Hi!"; 
   console.log(message);
   console.log(email_id);
   console.log(future_value);
