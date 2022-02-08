@@ -235,3 +235,83 @@ function check_even_numbers(){
     }
   }
 }
+
+/*
+Syntax - for in (loop) - Used to iterate Object properties
+for(var key in object_variable_name){
+ // coding
+}
+*/
+
+for(var key in studentDetails){
+  console.log("The key of object", key);
+  console.log("The value of object", studentDetails[key])
+ }
+
+ /*
+Syntax - for of (loop) - Used to iterate list of Array
+for(var value of array_variable_name){
+ // coding
+}
+*/
+
+for(var value of studentList){
+  console.log(value.name);
+}
+
+/*
+Syntax - While (loop) (Entry level check)
+while(condition){
+ // loop code block
+}
+*/
+
+var count = 1;
+while(count <= 10){
+ console.log("The count is", count);
+ count = count + 1;
+}
+
+/*
+Syntax - do While (loop) (Exit level check)
+do{
+ // code block      
+}while(condition)
+*/
+
+var count = 11;
+do{
+ console.log("The count is", count);
+ count = count + 1;
+}while(count <= 10)
+
+/*Syntax - Switch Case
+switch(expression){
+  case value :
+    // code block
+    break;
+  case value :
+    // code block
+    break;
+  default:
+    //code block
+}
+*/
+
+function find_weekday(){
+  var day = prompt("Enter a number from 0 - 6");
+
+  switch(parseInt(day)){
+    case 0:
+      console.log("Sunday");
+      break;
+    case 1:
+      console.log("Monday");
+      break;
+    case 2:
+      console.log("Tuesday");
+      break;
+    default:
+      console.log("Number is out of range")
+  }
+}
