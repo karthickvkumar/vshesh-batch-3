@@ -1,0 +1,17 @@
+.heading{
+  color: red;
+}
+
+.label{
+  width: 265px;
+  display: inline-block;
+  font-size: 22px;
+}
+
+.inputbox{
+  font-size: 22px;
+}
+
+.space{
+  margin-bottom: 10px
+}

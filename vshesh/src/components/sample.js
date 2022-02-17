@@ -16,7 +16,7 @@ class SampleComponenet extends Component{
   render(){
     return(
       <div>
-        <h1>This is sample Component</h1>
+        <h1 className="heading">This is sample Component</h1>
         <button onClick={ () => this.display() }>Click for Event</button>
         <div>
           <label>Enter your Email ID</label>
