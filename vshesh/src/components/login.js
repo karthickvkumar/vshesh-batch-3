@@ -37,6 +37,11 @@ class LoginPage extends Component{
         <br></br>
         <h2>The email id is {this.state.email_id}</h2>
         <h2>The password is {this.state.password}</h2>
+
+        <img src={require("../images/shinchu.jpg")} className="image"/>
+
+        <img src="https://cdn.motor1.com/images/mgl/mrz1e/s1/coolest-cars-feature.webp" className="image"/>
+
       </div>
     )
   }
