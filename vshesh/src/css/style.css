@@ -13,9 +13,25 @@
 }
 
 .space{
-  margin-bottom: 10px
+  margin-bottom: 10px;
+  font-size: 22px;
 }
 
 .image{
   width: 300px;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+.address{
+  font-size: 22px;
+  width: 300px;
+  height: 60px;
+}
+
+.font{
+  font-size: 22px;
 }
