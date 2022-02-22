@@ -35,3 +35,8 @@
 .font{
   font-size: 22px;
 }
+
+.error-msg{
+  color:  red;
+  font: 18px;
+}
