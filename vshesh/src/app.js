@@ -5,6 +5,7 @@ import HomePage from "./pages/home";
 import ContactPage from "./pages/contact";
 import AboutPage from "./pages/about";
 import ProfilePage from "./pages/profile";
+import MailPage from "./pages/mail";
 
 import "./css/style.css";
 
@@ -19,6 +20,7 @@ class App extends Component{
             <Route path="/contact" element={<ContactPage></ContactPage>}></Route>
             <Route path="/about" element={<AboutPage></AboutPage>}></Route>
             <Route path="/profile" element={<ProfilePage></ProfilePage>}></Route>
+            <Route path="/mail" element={<MailPage></MailPage>}></Route>
           </Routes>
         </BrowserRouter>
       </div>

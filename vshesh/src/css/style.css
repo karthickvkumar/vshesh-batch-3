@@ -40,3 +40,36 @@
   color:  red;
   font: 18px;
 }
+
+.container{
+  height: 97vh;
+}
+
+.heading{
+  height: 10%;
+  border: 2px solid red;
+}
+
+.wrapper{
+  height: 85%;
+  border: 2px solid red;
+  display: flex;
+  flex-direction: row;
+}
+
+.sidebar{
+  width: 25%;
+  height: 100%;
+  border: 2px solid black;
+}
+
+.content{
+  width: 75%;
+  height: 100%;
+  border: 2px solid black;
+}
+
+.footer{
+  height: 5%;
+  border: 2px solid red;
+}
