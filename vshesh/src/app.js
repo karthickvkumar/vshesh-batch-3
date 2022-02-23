@@ -1,8 +1,10 @@
 import React, {Component} from "react";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 
-import SampleComponenet from "./components/sample";
-import LoginPage from "./components/login";
-import RegisterPage from "./components/register";
+import HomePage from "./pages/home";
+import ContactPage from "./pages/contact";
+import AboutPage from "./pages/about";
+import ProfilePage from "./pages/profile";
 
 import "./css/style.css";
 
@@ -11,11 +13,14 @@ class App extends Component{
   render(){
     return(
       <div>
-        {/* <h1>Welcome to App Page</h1>
-        <h2>React JS app file</h2>
-        <SampleComponenet></SampleComponenet> */}
-        {/* <LoginPage></LoginPage> */}
-        <RegisterPage></RegisterPage>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<HomePage></HomePage>}></Route>
+            <Route path="/contact" element={<ContactPage></ContactPage>}></Route>
+            <Route path="/about" element={<AboutPage></AboutPage>}></Route>
+            <Route path="/profile" element={<ProfilePage></ProfilePage>}></Route>
+          </Routes>
+        </BrowserRouter>
       </div>
     )
   }
