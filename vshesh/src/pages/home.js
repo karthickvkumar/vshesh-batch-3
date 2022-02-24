@@ -13,6 +13,7 @@ class HomePage extends Component{
         <br></br>
         <NavLink to="/profile">Go to Profile Page</NavLink>
         <br></br>
+        <NavLink to="/mail">Go to Mail Page</NavLink>
       </div>
     )
   }

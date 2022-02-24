@@ -1,9 +1,5 @@
 import React, { Component } from "react";
-import {BrowserRouter, Routes, Route} from "react-router-dom";
-
-import InboxPage from "./mail/inbox";
-import SentPage from "./mail/sent";
-import TrashPage from "./mail/trash";
+import {Outlet, NavLink} from "react-router-dom";
 
 class MailPage extends Component{
 
@@ -12,13 +8,15 @@ class MailPage extends Component{
       <div className="container">
         <div className="heading"></div>
         <div className="wrapper">
-          <div className="sidebar"></div>
+          <div className="sidebar">
+            <NavLink to="/mail/inbox">Go to Inbox</NavLink>
+            <br></br>
+            <NavLink to="/mail/sent">Go to Sent</NavLink>
+            <br></br>
+            <NavLink to="/mail/trash">Go to Trash</NavLink>
+          </div>
           <div className="content">
-            <Routes>
-              <Route path="/mail/*" element={<InboxPage></InboxPage>}></Route>
-              {/* <Route path="/mail/sent" element={<SentPage></SentPage>}></Route> */}
-              {/* <Route path="/mail/trash" element={<TrashPage></TrashPage>}></Route> */}
-            </Routes>
+            <Outlet></Outlet>
           </div>
         </div>
         <div className="footer"></div>

@@ -7,6 +7,10 @@ import AboutPage from "./pages/about";
 import ProfilePage from "./pages/profile";
 import MailPage from "./pages/mail";
 
+import InboxPage from "./pages/mail/inbox";
+import SentPage from "./pages/mail/sent";
+import TrashPage from "./pages/mail/trash";
+
 import "./css/style.css";
 
 class App extends Component{
@@ -20,7 +24,11 @@ class App extends Component{
             <Route path="/contact" element={<ContactPage></ContactPage>}></Route>
             <Route path="/about" element={<AboutPage></AboutPage>}></Route>
             <Route path="/profile" element={<ProfilePage></ProfilePage>}></Route>
-            <Route path="/mail" element={<MailPage></MailPage>}></Route>
+            <Route path="/mail" element={<MailPage></MailPage>}>
+              <Route path="inbox" element={<InboxPage></InboxPage>}></Route>
+              <Route path="sent" element={<SentPage></SentPage>}></Route>
+              <Route path="trash" element={<TrashPage></TrashPage>}></Route>
+            </Route>
           </Routes>
         </BrowserRouter>
       </div>
