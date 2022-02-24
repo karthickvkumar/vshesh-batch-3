@@ -6,6 +6,7 @@ import ContactPage from "./pages/contact";
 import AboutPage from "./pages/about";
 import ProfilePage from "./pages/profile";
 import MailPage from "./pages/mail";
+import RegisterPage from "./components/register";
 
 import InboxPage from "./pages/mail/inbox";
 import SentPage from "./pages/mail/sent";
@@ -21,6 +22,7 @@ class App extends Component{
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<HomePage></HomePage>}></Route>
+            <Route path="/register" element={<RegisterPage></RegisterPage>}></Route>
             <Route path="/contact" element={<ContactPage></ContactPage>}></Route>
             <Route path="/about" element={<AboutPage></AboutPage>}></Route>
             <Route path="/profile" element={<ProfilePage></ProfilePage>}></Route>
