@@ -4,12 +4,22 @@ import axios from "axios";
 
 class HomePage extends Component{
 
+  constructor(props){
+    super(props);
+    this.state = {
+      userList : []
+    }
+  }
+
   loadUserDetials(){
     var apiURL = "https://reqres.in/api/users?page=2";
 
     axios.get(apiURL)
         .then( (response) => {
-          console.log(response);
+          var serverData = response.data;
+          this.setState({
+            userList : serverData.data
+          })
         })
         .catch( (error) => {
             console.log(error);
@@ -17,6 +27,8 @@ class HomePage extends Component{
   }
 
   render(){
+    console.log(this.state.userList)
+
     return(
       <div>
         <h1>Home Page</h1>
@@ -29,6 +41,24 @@ class HomePage extends Component{
         <NavLink to="/mail">Go to Mail Page</NavLink>
         <br></br>
         <button onClick={() => this.loadUserDetials()}>Load User Information</button>
+        <table id="customers">
+          <thead>
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Email Id</th>
+              <th>Picture</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>sdfsdf</td>
+              <td>sdfsdf</td>
+              <td>sdfsdf</td>
+              <td>sdfsdf</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     )
   }
