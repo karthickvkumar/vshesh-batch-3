@@ -19,8 +19,9 @@ class ContactPage extends Component{
   }
 
   onSubmit(){
-    var apiURL = "https://reqres.in/api/users";
-    axios.post(apiURL, this.state)
+    // var apiURL = "https://reqres.in/api/users";
+    var apiURL = "https://reqres.in/api/users/2";
+    axios.put(apiURL, this.state)
         .then((response) => {
           var serverData = response.data;
           console.log(serverData);
