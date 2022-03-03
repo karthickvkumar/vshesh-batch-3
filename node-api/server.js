@@ -27,7 +27,22 @@ connection.connect((error) => {
   }
 
   console.log("MYSQL database is connected successfully")
+});
+
+// http://localhost:4000/api/user/list
+app.get("/api/user/list", (request, response) => {
+  var sql_query = `SELECT * from karthick_kumar`;
+
+  connection.query(sql_query, (error, result) => {
+    if(error){
+      response.status(500).send(error);
+      return;
+    }
+
+    response.status(200).send(result);
+  })
 })
+
 
 
 const port = process.env.PORT || 4000;
