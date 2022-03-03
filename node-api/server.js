@@ -13,6 +13,22 @@ app.use(cors({
   origin: "*"
 }))
 
+var connection = mysql.createConnection({
+  host: "remotemysql.com",
+  user: "wym4khPjwJ",
+  password: "IpVePeo1GV",
+  database: "wym4khPjwJ",
+  port: 3306
+});
+
+connection.connect((error) => {
+  if(error){
+    throw error;
+  }
+
+  console.log("MYSQL database is connected successfully")
+})
+
 
 const port = process.env.PORT || 4000;
 http.listen(port, () => {
