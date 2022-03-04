@@ -44,6 +44,7 @@ var studentDetails = {
   grade : "A+",
   location : "Chennai"
 }
+
 console.log(studentDetails);
 
 // Object -> 4 operation = read value, insert new value, edit exisiting value, delete existing value. 
@@ -176,17 +177,17 @@ function check_voiting_status(){
 }
 
 //Syntax - Multipe if else conditon
-/*
-  if(conditon) {
-    // code block will execute if the condition is Truthy.
-  }
-  else if(condition){
-   // code block will execute if the condition is Truthy
-  }
-  else{
-    // code block will execute if the condition is Falsy.
-  }
-*/
+
+  // if(conditon) {
+  //   // code block will execute if the condition is Truthy.
+  // }
+  // else if(condition){
+  //  // code block will execute if the condition is Truthy
+  // }
+  // else{
+  //   // code block will execute if the condition is Falsy.
+  // }
+
 
 /*
 1. To give person age as input -> Number
@@ -301,7 +302,7 @@ switch(expression){
 function find_weekday(){
   var day = prompt("Enter a number from 0 - 6");
 
-  switch(parseInt(day)){
+  switch(day){
     case 0:
       console.log("Sunday");
       break;
@@ -319,18 +320,18 @@ function find_weekday(){
 // Local Scope -> If a variable is defined inside the function definition.
 // Global Scope -> If a variable is defined outside the function definition.
 
-//Automatic Global Scope -> If a variable is declared outside but the value is defined inside a function.
+// Automatic Global Scope -> If a variable is declared outside but the value is defined inside a function.
 
 function diplayMessage(){
-  var message = "Hello Everyone!";
-  future_value = "Hey Hi!"; 
-  console.log(message);
-  console.log(email_id);
-  console.log(future_value);
-}
+    var message = "Hello Everyone!";
+    console.log(message);
+    console.log(email_id); 
 
-function printMessage(){
-  // console.log(message);
-  console.log(email_id);
-  console.log(future_value);
+    future_value = "Lunch Break!"
+    console.log(future_value);
+  }
+  
+  function printMessage(){
+    console.log(email_id);
+    console.log(future_value);
 }
