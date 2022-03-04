@@ -43,6 +43,72 @@ app.get("/api/user/list", (request, response) => {
   })
 })
 
+// http://localhost:4000/api/user/create
+app.post("/api/user/create", (request, response) => {
+  var name = request.body.name;
+  var age = request.body.age;
+  var location = request.body.location;
+  var grade = request.body.grade;
+
+  var sql_query = `INSERT INTO karthick_kumar (name, age, location, grade) VALUES ('${name}', ${age}, '${location}', '${grade}')`;
+
+  connection.query(sql_query, (error, result) => {
+    if(error){
+      response.status(500).send(error);
+      return;
+    }
+
+    response.status(200).send({
+      result,
+      message : "User is created successfully"
+    });
+  })
+})
+
+// http://localhost:4000/api/user/edit/1
+
+app.put("/api/user/edit/:id", (request, response) => {
+  var id = request.params.id;
+
+  var name = request.body.name;
+  var age = request.body.age;
+  var location = request.body.location;
+  var grade = request.body.grade;
+
+  var sql_query = `UPDATE karthick_kumar SET name='${name}', age=${age}, location='${location}', grade='${grade}' WHERE Id=${id}`;
+
+  connection.query(sql_query, (error, result) => {
+    if(error){
+      response.status(500).send(error);
+      return;
+    }
+
+    response.status(200).send({
+      result,
+      message : "User is profile has been updated successfully"
+    });
+  })
+})
+
+// http://localhost:4000/api/user/delete/1
+app.delete("/api/user/delete/:id", (request, response) => {
+  var id = request.params.id;
+
+  var sql_query = `DELETE FROM karthick_kumar WHERE Id=${id}`;
+  connection.query(sql_query, (error, result) => {
+    if(error){
+      response.status(500).send(error);
+      return;
+    }
+
+    response.status(200).send({
+      result,
+      message : "User profile has been deleted successfully"
+    });
+  })
+
+});
+
 
 
 const port = process.env.PORT || 4000;
